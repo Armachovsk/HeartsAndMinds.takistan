@@ -1,4 +1,8 @@
-[] call compile preprocessFileLineNumbers "define_mod.sqf";
-[] call compile preprocessFileLineNumbers "core\def\mission.sqf";
+[
+    {
+        [] call compile preprocessFileLineNumbers "define_mod.sqf";
+        [] call compile preprocessFileLineNumbers "core\def\mission.sqf";
 
-#include "HeartsAndMindsCore\init.sqf"
+        true
+    }
+] call compile preprocessFileLineNumbers "HeartsAndMindsCore\init.sqf"
